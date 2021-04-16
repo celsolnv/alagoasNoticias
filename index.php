@@ -137,27 +137,25 @@
     return $site_escolhido;
   }
 
-    include_once './phpQuery/phpQuery/phpQuery.php';
+  include_once './phpQuery/phpQuery/phpQuery.php';
 
-    phpQuery::newDocumentFileHTML(main());
-    $conteudo = pq('.content-text');
-    $time = pq('time');
+  phpQuery::newDocumentFileHTML(main());
+  $conteudo = pq('.content-text');
+  $time = pq('time');
 
-    $titulo  = pq('.content-head__title');
-    
-    echo '<div class="conteudo">';
-    echo '<h3>'.$titulo.'</h3>';
-    $texto = '';
-    foreach ($conteudo as $paragrafo){
-        $texto = pq($paragrafo);
-        // echo '<script>console.log("'.strip_tags($texto).'");</script>';
-        if (trim(strip_tags($texto))=="Veja mais notícias da região no G1 Alagoas"){}
-        else{
-            echo '<div> <p >'.$texto.'</p></div>';
-        }
-    }
-    echo $time;
-    echo '</div><br><br><br>';    
+  $titulo  = pq('.content-head__title');
+  
+  echo '<div class="conteudo">';
+  echo '<h3>'.$titulo.'</h3>';
+  $texto = '';
+  foreach ($conteudo as $paragrafo){
+      $texto = pq($paragrafo);
+      if (trim(strip_tags($texto))!="Veja mais notícias da região no G1 Alagoas"){
+        echo '<div> <p >'.$texto.'</p></div>';
+      }
+  }
+  echo $time;
+  echo '</div><br><br><br>';    
     ?>
     <footer class="page-footer">
         <div class="container">
@@ -181,7 +179,7 @@
                         <img class="icon" src="./icon/linkedin.svg" alt="linkedin">
                         <span style="font-size:24px;">Linkedin</span>
                     </a></li>
-                    <li><a target="_blank" class="grey-text text-lighten-3" href="https://github.com/celsops">
+                    <li><a target="_blank" class="grey-text text-lighten-3" href="https://github.com/celsolnv">
                         <img class="icon" src="./icon/github.svg" alt="github">
                         <span style="font-size:24px;">Github</span>
                     </a></li>

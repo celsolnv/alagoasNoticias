@@ -1,11 +1,22 @@
-# AlagoasNoticias
+<h1> Alagoas Notícias</h1>
 
-1 - Make download these project in https://github.com/celsops/AlagoasNoticias
+<h3> Descrição </h3>
+<p>
+    Este é um projeto feito em php usando a biblioteca phpQuery para extrair 
+    dados e informações de outros sites.
+</p>
+<p>
+    Esse projeto também faz uso da biblioteca de css/estilos materialize
+</p>
 
-2 - Execute the Lampp or Xampp
+<h4>Pagina inicial</h4>
+<img src="./screenshots/Home_page.png" alt="Pagina inicial">
 
-3- Move your project for httpdos of your device.
+<h4>Noticias</h4>
+<img src="./screenshots/noticias_publicadas.png.png" alt="Noticias publicadas">
 
-4- Open file index.php 
+<h4> Custo de vida </h4>
+<img src="./screenshots/custo_de_vida.png" alt="Custo de vida">
 
-5- Finish
+<h4>Historia</h4>
+<img src="./screenshots/historia_alagoas.png" alt="Historia de Alagoas">
