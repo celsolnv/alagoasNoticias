@@ -13,7 +13,7 @@
 <img src="./screenshots/Home_page.png" alt="Pagina inicial">
 
 <h4>Noticias</h4>
-<img src="./screenshots/noticias_publicadas.png.png" alt="Noticias publicadas">
+<img src="./screenshots/noticias_publicadas.png" alt="Noticias publicadas">
 
 <h4> Custo de vida </h4>
 <img src="./screenshots/custo_de_vida.png" alt="Custo de vida">
